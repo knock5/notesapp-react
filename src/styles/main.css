@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --primary: #009127;
+  --secondary: #fbff00;
+  --dark: #171717;
+  --light: #00ff95;
+  --red: #b31312;
+  --yellow: #aea417;
+  --green: #004215;
+}
+
+.note-app {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--dark);
+}
+
+.wrap-head-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrap-searchnotes {
+  padding: 50px auto;
+}
+
+.head-app {
+  color: var(--light);
+  padding: 10px;
+  text-align: center;
+}
+
+.wrap-inputapp {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.wrap-addnote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.note-input {
+  width: 75%;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.btn-simpan {
+  padding: 12px 23px;
+  text-align: center;
+  background-color: var(--green);
+  color: var(--light);
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+}
+.btn-simpan:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.sub-title {
+  text-align: center;
+  color: var(--secondary);
+}
+
+.form-label {
+  color: var(--secondary);
+  padding: 0 5px;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary);
+  padding: 10px 15px;
+  border: 1px solid var(--light);
+  border-radius: 5px;
+}
+.note-body {
+  width: 250px;
+}
+.note-title {
+  color: var(--secondary);
+  padding: 5px 0;
+}
+.note-date {
+  color: var(--primary);
+  padding: 3px 0 10px;
+  font-size: 14px;
+}
+.note-content {
+  color: var(--secondary);
+  padding-bottom: 10px;
+}
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.delete-btn {
+  color: var(--red);
+  padding: 8px 18px;
+  text-align: center;
+  background-color: var(--red);
+  color: var(--light);
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+}
+.delete-btn:hover {
+  cursor: pointer;
+  background-color: #9b0000;
+  color: var(--light);
+}
+
+.card-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.move-btn {
+  color: var(--yellow);
+  padding: 8px 18px;
+  text-align: center;
+  background-color: var(--yellow);
+  color: var(--dark);
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+}
+.move-btn:hover {
+  cursor: pointer;
+  background-color: #b3a900;
+  color: var(--dark);
+}
+
+.wrap-archivednotes {
+  margin-top: 50px;
+}
+
+.empty-notes {
+  text-align: center;
+  color: var(--yellow);
+  padding: 20px 10px;
+}
+
+.char-limit {
+  color: var(--yellow);
+  text-align: right;
+}
